@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Producto más vendido</title>
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
+
+    <!-- Estilos personalizados -->
+    <link href="assets/css/productos_mas_vendidos.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <img src="assets/svg/LogoFinal.svg" alt="Logo">
+        <a class="navbar-brand" href="/">Portfolio del Alumno David Romero Mateu - DAW</a>
+        <div class="d-flex">
+          <button id="themeToggle" class="btn btn-outline-primary me-2" aria-label="Cambiar tema">
+            <i class="bi bi-sun" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/productos-mas-vendido.html">Productos mas vendidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/buscador-supermercados">Buscador de supermercado más barato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard.html">Dashboard</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <nav class="navbar mb-5">
+        <h1 class="mt-5 mb-5">Productos mas vendidos por supermercados</h1>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="Images/Productos_mas_vendidos/perfumeria-Carrusel.jpg" class="d-block w-100" alt="Aceite">
+              <div class="carousel-caption">
+                <h2>Colonias y Perfumes</h2>
+                <p>Frescura y suavidad en cada aplicación.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="Images/Productos_mas_vendidos/papel-Carrusel.jpg" class="d-block w-100" alt="Papel higiénico">
+              <div class="carousel-caption">
+                <h2>Papel Higiénico</h2>
+                <p>Suavidad y calidad en cada rollo.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Images/Productos_mas_vendidos/cafe-carrusel.jpg" class="d-block w-100" alt="Café">
+              <div class="carousel-caption">
+                <h2>Café Molido</h2>
+                <p>El mejor café para empezar el día.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="container d-flex justify-content-center align-items-center mt-5">
+        <form class="d-flex w-50" role="search">
+            <input class="form-control me-2 bg-body-tertiary rounded-4" type="search" placeholder="Mercadona" aria-label="Search" list="supermercados">
+            <button class="btn btn-warning rounded-4" type="submit">Buscar</button>
+        </form>
+        </div>
+    </nav>
+    <datalist id="supermercados">
+        <option value="Mercadona">
+        <option value="Carrefour">
+        <option value="Dia">
+        <option value="Lidl">
+        <option value="Alcampo">
+        <option value="Hipercor">
+        <option value="Eroski">
+    </datalist>
+
+    <h3>Has buscado: Mercadona</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+        <div class="col mb-4">
+          <div class="card h-100 bg-body-tertiary">
+            <img src="Images/Productos_mas_vendidos/Crema-hidratante-de-Mercadona.png" class="card-img-top" alt="Crema Facial">
+            <div class="card-body bg-body-tertiary">
+              <h4 class="card-title text-center mb-4">Crema facial Textura Rica 24h</h4>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 bg-body-tertiary">
+            <img src="Images/Productos_mas_vendidos/Aceite.png" class="card-img-top" alt="Aceite">
+            <div class="card-body bg-body-tertiary">
+              <h4 class="card-title text-center mb-4">Aceite de Oliva Virgen Extra Hacendado</h4>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 bg-body-tertiary">
+            <img src="Images/Productos_mas_vendidos/Friegasuelos-Petalos-Bosque-Verde-concentrado.png" class="card-img-top" alt="Friegasuelos">
+            <div class="card-body bg-body-tertiary">
+              <h4 class="card-title text-center mb-4">Friegasuelos Pétalos Bosque Verde</h4>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 bg-body-tertiary">
+            <img src="Images/Productos_mas_vendidos/cafe.png" class="card-img-top" alt="Cafe">
+            <div class="card-body bg-body-tertiary">
+              <h4 class="card-title text-center mb-4">Café molido natural Hacendado</h4>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100 bg-body-tertiary">
+              <img src="Images/Productos_mas_vendidos/Vino.png" class="card-img-top" alt="Vino">
+              <div class="card-body bg-body-tertiary">
+                <h4 class="card-title text-center mb-4">Vino tinto Rioja Cune crianza</h4>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 bg-body-tertiary">
+              <img src="Images/Productos_mas_vendidos/mascarilla.png" class="card-img-top" alt="Mascarilla">
+              <div class="card-body bg-body-tertiary">
+                <h4 class="card-title text-center mb-4">Mascarilla Repair & Nutrition Deliplus</h4>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-body-tertiary">
+              <img src="Images/Productos_mas_vendidos/Gazpacho.png" class="card-img-top" alt="Gazpacho">
+              <div class="card-body bg-body-tertiary">
+                <h4 class="card-title text-center mb-4">Gazpacho fresco García Millán</h4>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-body-tertiary">
+              <img src="Images/Productos_mas_vendidos/Leche.png" class="card-img-top" alt="Leche">
+              <div class="card-body bg-body-tertiary">
+                <h4 class="card-title text-center mb-4">Leche semidesnatada Hacendado</h4>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-body-tertiary">
+              <img src="Images/Productos_mas_vendidos/nocilla.png" class="card-img-top" alt="Crema al cacao y leche con avellanas">
+              <div class="card-body bg-body-tertiary">
+                <h4 class="card-title text-center mb-4">Crema al cacao y leche con avellanas</h4>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+  </div>
+
+  <footer class="container-fluid text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este portafolio es &copy; 2024 David Romero Mateu de DAW. ¡Mira los proyectos!</p>
+      <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+      <div class="mt-3">
+        <p>Este trabajo es licenciado bajo <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" 
+          target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+   <script type="module" src="/assets/js/main.js"></script>
+
+  </body>
+</html>

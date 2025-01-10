@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Login</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <!-- Estilos personalizados -->
+    <link href="assets/css/login.css" rel="stylesheet"> 
+    
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <img src="assets/svg/LogoFinal.svg" alt="Logo">
+          <a class="navbar-brand" href="/">Portfolio del Alumno David Romero Mateu - DAW</a>
+          <div class="d-flex">
+            <button id="themeToggle" class="btn btn-outline-primary me-2" aria-label="Cambiar tema">
+              <i class="bi bi-sun" id="themeIcon"></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/productos-mas-vendido.html">Productos mas vendidos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/buscador-supermercados">Buscador de supermercado más barato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/registro.html">Registro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard.html">Dashboard</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
+        <img src="Images/Login/Logo_LaCesta.png" alt="LaCesta">
+          <h3 class="text-center mb-4">Iniciar Sesión</h3>
+          <form>
+              <div class="mb-3 mt-3">
+                  <label for="email" class="form-label ms-1"><strong>Correo Electrónico</strong></label>
+                  <input type="email" class="form-control mt-2" id="email" placeholder="nombre@ejemplo.com" required>
+              </div>
+              <div class="mb-4">
+                  <label for="password" class="form-label ms-1"><strong>Contraseña</strong></label>
+                  <input type="password" class="form-control mt-2" id="password" placeholder="Ingresa tu contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 mt-2"><strong>Iniciar Sesión</strong></button>
+          </form>
+          <div class="text-center mt-3">
+              <small>¿No tienes una cuenta? <a href="registro.html" class="text-dark"><strong>Regístrate</strong></a></small>
+          </div>
+      </div>
+    </div>
+
+    <script type="module" src="/assets/js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Producto más vendido</title>
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
+
+    <!-- Estilos personalizados -->
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <img src="assets/svg/LogoFinal.svg" alt="Logo">
+        <a class="navbar-brand" href="/">Portfolio del Alumno David Romero Mateu - DAW</a>
+        <div class="d-flex">
+          <button id="themeToggle" class="btn btn-outline-primary me-2" aria-label="Cambiar tema">
+            <i class="bi bi-sun" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/productos-mas-vendido.html">Productos mas vendidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/buscador-supermercados">Buscador de supermercado más barato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard.html">Dashboard</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="chart-container primero">
+                    <h1 class="text-center mb-5 negro">Número de productos por categorías</h1>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+        
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="chart-container segundo">
+                    <h1 class="text-center mb-5 negro">Ranking de gasto en supermercados</h1>
+                    <canvas id="spendingChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-6 mt-5">
+                <div class="chart-container tercero">
+                    <h1 class="text-center mb-5 negro">Gasto promedio por ticket</h1>
+                    <canvas id="extraChart1"></canvas>
+                </div>
+            </div>
+        
+            <div class="col-12 col-md-6 col-lg-6 mt-5">
+                <div class="chart-container cuarto">
+                    <h1 class="text-center mb-5 negro">Número de tickets procesados por semana</h1>
+                    <canvas id="extraChart2"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <footer class="container-fluid text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este portafolio es &copy; 2024 David Romero Mateu de DAW. ¡Mira los proyectos!</p>
+      <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+      <div class="mt-3">
+        <p>Este trabajo es licenciado bajo <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" 
+          target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+   <script type="module" src="/assets/js/main.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <script src="assets/js/graficas.js"></script>
+
+  </body>
+</html>

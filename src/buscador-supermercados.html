@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Buscador supermercados</title>
+
+    <!-- Bootstrap ICONS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
+
+    <!-- Estilos personalizados -->
+    <link href="assets/css/buscador-supermercados.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <img src="assets/svg/LogoFinal.svg" alt="Logo">
+        <a class="navbar-brand" href="/">Portfolio del Alumno David Romero Mateu - DAW</a>
+        <div class="d-flex">
+          <button id="themeToggle" class="btn btn-outline-primary me-2" aria-label="Cambiar tema">
+            <i class="bi bi-sun" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/productos-mas-vendido.html">Productos mas vendidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/buscador-supermercados">Buscador de supermercado más barato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dashboard.html">Dashboard</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container">
+        <h1 class="text-center mb-4 py-5">Encuentra el supermercado más barato por categoría</h1>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="category" class="form-label">Categoría</label>
+                    <select id="category" class="form-select bg-body-tertiary">
+                        <option value="alimentos">Alimentos</option>
+                        <option value="bebidas">Bebidas</option>
+                        <option value="limpieza">Productos de limpieza</option>
+                        <option value="electrodomesticos">Electrodomésticos</option>
+                        <option value="cosmeticos">Cosméticos</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="location" class="form-label">Ciudad</label>
+                    <select id="location" class="form-select bg-body-tertiary">
+                        <option value="sevilla">Sevilla</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="zaragoza">Zaragoza</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="murcia">Murcia</option>
+                        <option value="palma">Palma</option>
+                        <option value="las-palmas">Las Palmas de Gran Canaria</option>
+                        <option value="bilbao">Bilbao</option>
+                        <option value="alicante">Alicante</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="vigo">Vigo</option>
+                        <option value="gijon">Gijón</option>
+                        <option value="oviedo">Oviedo</option>
+                        <option value="granada">Granada</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="santiago">Santiago de Compostela</option>
+                        <option value="leon">León</option>
+                        <option value="toledo">Toledo</option>
+                    </select>
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <button type="submit" class="btn btn-warning w-100">Buscar supermercado más barato</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Resultados del supermercado -->
+        <div class="mt-5">
+            <h2>Supermercado más barato:</h2>
+            <p>Selecciona una categoría y ubicación para ver resultados.</p>
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <iframe title="Mapa interactivo de los supermercados mas baratos" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d50720.138074086644!2d-6.057160190999247!3d37.38962819143081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssupermercados%20baratos%20sevilla!5e0!3m2!1ses!2ses!4v1732281465858!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+  <footer class="container-fluid text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este portafolio es &copy; 2024 David Romero Mateu de DAW. ¡Mira los proyectos!</p>
+      <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
+      <div class="mt-3">
+        <p>Este trabajo es licenciado bajo <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" 
+          target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+          src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+   <script type="module" src="/assets/js/main.js"></script>
+
+  </body>
+</html>

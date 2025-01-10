@@ -1,0 +1,138 @@
+* {
+
+  font-family: 'Fredoka';
+
+}
+
+.container-fluid img {
+
+    width: 7%;
+    padding: 0;
+
+
+}
+
+.card {
+
+    transition: transform 0.3s ease-in-out;
+
+}
+  
+.card:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+  color: black;
+  filter: invert(1);
+  
+}
+
+.carousel-caption {
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-49%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 60%;
+    max-width: 100%;
+
+}
+  
+.carousel-caption h2 {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e2c44b;
+    margin: 0;
+
+}
+  
+.carousel-caption p {
+
+    font-size: 1rem;
+    color: #d1d1d1;
+    margin: 0;
+
+}
+
+@media (max-width: 767px) {
+
+    .carousel-caption {
+
+      width: 80%;
+      margin-left: 35%;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5); 
+      color: white;
+      min-height: 100px;
+      overflow: visible;
+
+    }
+  
+    .carousel-caption h2 {
+
+      font-size: 1.1rem;
+      font-weight: bold;
+
+    }
+  
+    .carousel-caption p {
+
+      font-size: 0.9rem;
+
+    }
+
+}
+
+@keyframes slideUp {
+
+    from {
+
+      transform: translateY(20px);
+      opacity: 0;
+
+    }
+
+    to {
+
+      transform: translateY(0);
+      opacity: 1;
+
+    }
+
+}
+  
+.carousel-caption h2, .carousel-caption p {
+
+    animation: slideUp 1s ease-out forwards;
+    opacity: 0;
+
+}
+  
+
+.carousel-caption h2 {
+
+    animation-delay: 0.5s;
+
+}
+  
+.carousel-caption p {
+
+    animation-delay: 1s;
+    
+}
+
+
+
+
