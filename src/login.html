@@ -22,9 +22,9 @@
   <body>
 
     <header>
-      <nav class="navbar bg-body-tertiary fixed-top">
+      <nav class="navbar bg-body-tertiary fixed-top" aria-label="Menú principal">
         <div class="container-fluid">
-          <img src="assets/svg/LogoFinal.svg" alt="Logo">
+          <img src="assets/svg/LogoFinal.svg" alt="Logo de La Cesta">
           <a class="navbar-brand" href="/">Portfolio del Alumno David Romero Mateu - DAW</a>
           <div class="d-flex">
             <button id="themeToggle" class="btn btn-outline-primary me-2" aria-label="Cambiar tema">
@@ -73,18 +73,18 @@
       </nav>
     </header>
 
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <main class="container d-flex justify-content-center align-items-center min-vh-100">
       <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
-        <img src="Images/Login/Logo_LaCesta.png" alt="LaCesta">
+        <img src="Images/Login/Logo_LaCesta.png" alt="Logo de la Cesta - Iniciar sesión">
           <h3 class="text-center mb-4">Iniciar Sesión</h3>
           <form>
               <div class="mb-3 mt-3">
                   <label for="email" class="form-label ms-1"><strong>Correo Electrónico</strong></label>
-                  <input type="email" class="form-control mt-2" id="email" placeholder="nombre@ejemplo.com" required>
+                  <input type="email" class="form-control mt-2" id="email" placeholder="nombre@ejemplo.com" required autocomplete="email">
               </div>
               <div class="mb-4">
                   <label for="password" class="form-label ms-1"><strong>Contraseña</strong></label>
-                  <input type="password" class="form-control mt-2" id="password" placeholder="Ingresa tu contraseña" required>
+                  <input type="password" class="form-control mt-2" id="password" placeholder="Ingresa tu contraseña" required autocomplete="current-password">
               </div>
               <button type="submit" class="btn btn-primary w-100 mt-2"><strong>Iniciar Sesión</strong></button>
           </form>
@@ -92,7 +92,8 @@
               <small>¿No tienes una cuenta? <a href="registro.html" class="text-dark"><strong>Regístrate</strong></a></small>
           </div>
       </div>
-    </div>
+    </main>
+
 
     <script type="module" src="/assets/js/main.js"></script>
 

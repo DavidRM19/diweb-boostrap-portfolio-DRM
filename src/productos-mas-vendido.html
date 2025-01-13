@@ -19,66 +19,66 @@
   </head>
   <body>
     
-  <header>
-    <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <img src="assets/svg/LogoFinal.svg" alt="Logo">
-        <a class="navbar-brand" href="/">Portfolio del Alumno David Romero Mateu - DAW</a>
-        <div class="d-flex">
-          <button id="themeToggle" class="btn btn-outline-primary me-2" aria-label="Cambiar tema">
-            <i class="bi bi-sun" id="themeIcon"></i>
-          </button>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <img src="assets/svg/LogoFinal.svg" alt="Logo de La Cesta">
+          <a class="navbar-brand" href="/">Portfolio del Alumno David Romero Mateu - DAW</a>
+          <div class="d-flex">
+            <button id="themeToggle" class="btn btn-outline-primary me-2" aria-label="Cambiar tema">
+              <i class="bi bi-sun" id="themeIcon"></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Abrir menú de navegación">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/formulario-pago.html">Contrata mis servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/productos-mas-vendido.html">Productos mas vendidos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/buscador-supermercados">Buscador de supermercado más barato</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/registro.html">Registro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/dashboard.html">Dashboard</a>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Principal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/" aria-label="Ir a la página de inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/formulario-pago.html" aria-label="Ir a la página de Formulario de Pago">Contrata mis servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/productos-mas-vendido.html" aria-label="Ir a la página de Productos mas vendidos">Productos mas vendidos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/buscador-supermercados" aria-label="Ir a la página de Buscador de supermercado más barato">Buscador de supermercado más barato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html" aria-label="Ir a la página de Buscador de login">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/registro.html" aria-label="Ir a la página de Buscador de registro">Registro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard.html" aria-label="Ir a la página de Buscador de dashboard">Dashboard</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search" aria-label="Formulario de búsqueda en la página">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
   <div class="container">
     <nav class="navbar mb-5">
         <h1 class="mt-5 mb-5">Productos mas vendidos por supermercados</h1>
 
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" role="region" aria-roledescription="Carrusel" aria-label="Productos destacados" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4000">
-              <img src="Images/Productos_mas_vendidos/perfumeria-Carrusel.jpg" class="d-block w-100" alt="Aceite">
+              <img src="Images/Productos_mas_vendidos/perfumeria-Carrusel.jpg" class="d-block w-100" alt="Colonias y Perfumes">
               <div class="carousel-caption">
                 <h2>Colonias y Perfumes</h2>
                 <p>Frescura y suavidad en cada aplicación.</p>
@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="Images/Productos_mas_vendidos/cafe-carrusel.jpg" class="d-block w-100" alt="Café">
+              <img src="Images/Productos_mas_vendidos/cafe-carrusel.jpg" class="d-block w-100" alt="Café Molido">
               <div class="carousel-caption">
                 <h2>Café Molido</h2>
                 <p>El mejor café para empezar el día.</p>
@@ -111,7 +111,7 @@
 
         <div class="container d-flex justify-content-center align-items-center mt-5">
         <form class="d-flex w-50" role="search">
-            <input class="form-control me-2 bg-body-tertiary rounded-4" type="search" placeholder="Mercadona" aria-label="Search" list="supermercados">
+            <input class="form-control me-2 bg-body-tertiary rounded-4" type="search" placeholder="Mercadona" aria-label="Buscar supermercado" list="supermercados">
             <button class="btn btn-warning rounded-4" type="submit">Buscar</button>
         </form>
         </div>
@@ -126,77 +126,77 @@
         <option value="Eroski">
     </datalist>
 
-    <h3>Has buscado: Mercadona</h3>
+    <h3 aria-live="polite">Has buscado: Mercadona</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
         <div class="col mb-4">
           <div class="card h-100 bg-body-tertiary">
-            <img src="Images/Productos_mas_vendidos/Crema-hidratante-de-Mercadona.png" class="card-img-top" alt="Crema Facial">
+            <img src="Images/Productos_mas_vendidos/Crema-hidratante-de-Mercadona.png" class="card-img-top" alt="Crema facial Textura Rica 24h">
             <div class="card-body bg-body-tertiary">
               <h4 class="card-title text-center mb-4">Crema facial Textura Rica 24h</h4>
-              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Crema facial Textura Rica 24h">Más información</a>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100 bg-body-tertiary">
-            <img src="Images/Productos_mas_vendidos/Aceite.png" class="card-img-top" alt="Aceite">
+            <img src="Images/Productos_mas_vendidos/Aceite.png" class="card-img-top" alt="Aceite de Oliva Virgen Extra Hacendado">
             <div class="card-body bg-body-tertiary">
               <h4 class="card-title text-center mb-4">Aceite de Oliva Virgen Extra Hacendado</h4>
-              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Aceite de Oliva Virgen Extra Hacendado">Más información</a>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100 bg-body-tertiary">
-            <img src="Images/Productos_mas_vendidos/Friegasuelos-Petalos-Bosque-Verde-concentrado.png" class="card-img-top" alt="Friegasuelos">
+            <img src="Images/Productos_mas_vendidos/Friegasuelos-Petalos-Bosque-Verde-concentrado.png" class="card-img-top" alt="Friegasuelos Pétalos Bosque Verde">
             <div class="card-body bg-body-tertiary">
               <h4 class="card-title text-center mb-4">Friegasuelos Pétalos Bosque Verde</h4>
-              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Friegasuelos Pétalos Bosque Verde">Más información</a>
             </div>
           </div>
         </div>
         <div class="col mb-4">
           <div class="card h-100 bg-body-tertiary">
-            <img src="Images/Productos_mas_vendidos/cafe.png" class="card-img-top" alt="Cafe">
+            <img src="Images/Productos_mas_vendidos/cafe.png" class="card-img-top" alt="Café molido natural Hacendado">
             <div class="card-body bg-body-tertiary">
               <h4 class="card-title text-center mb-4">Café molido natural Hacendado</h4>
-              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+              <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Café molido natural Hacendado">Más información</a>
             </div>
           </div>
         </div>
         <div class="col mb-4">
             <div class="card h-100 bg-body-tertiary">
-              <img src="Images/Productos_mas_vendidos/Vino.png" class="card-img-top" alt="Vino">
+              <img src="Images/Productos_mas_vendidos/Vino.png" class="card-img-top" alt="Vino tinto Rioja Cune crianza">
               <div class="card-body bg-body-tertiary">
                 <h4 class="card-title text-center mb-4">Vino tinto Rioja Cune crianza</h4>
-                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Vino tinto Rioja Cune crianza">Más información</a>
               </div>
             </div>
           </div>
           <div class="col mb-4">
             <div class="card h-100 bg-body-tertiary">
-              <img src="Images/Productos_mas_vendidos/mascarilla.png" class="card-img-top" alt="Mascarilla">
+              <img src="Images/Productos_mas_vendidos/mascarilla.png" class="card-img-top" alt="Mascarilla Repair & Nutrition Deliplus">
               <div class="card-body bg-body-tertiary">
                 <h4 class="card-title text-center mb-4">Mascarilla Repair & Nutrition Deliplus</h4>
-                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Mascarilla Repair & Nutrition Deliplus">Más información</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100 bg-body-tertiary">
-              <img src="Images/Productos_mas_vendidos/Gazpacho.png" class="card-img-top" alt="Gazpacho">
+              <img src="Images/Productos_mas_vendidos/Gazpacho.png" class="card-img-top" alt="Gazpacho fresco García Millán">
               <div class="card-body bg-body-tertiary">
                 <h4 class="card-title text-center mb-4">Gazpacho fresco García Millán</h4>
-                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Gazpacho fresco García Millán">Más información</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100 bg-body-tertiary">
-              <img src="Images/Productos_mas_vendidos/Leche.png" class="card-img-top" alt="Leche">
+              <img src="Images/Productos_mas_vendidos/Leche.png" class="card-img-top" alt="Leche semidesnatada Hacendado">
               <div class="card-body bg-body-tertiary">
                 <h4 class="card-title text-center mb-4">Leche semidesnatada Hacendado</h4>
-                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Leche semidesnatada Hacendado">Más información</a>
               </div>
             </div>
           </div>
@@ -205,7 +205,7 @@
               <img src="Images/Productos_mas_vendidos/nocilla.png" class="card-img-top" alt="Crema al cacao y leche con avellanas">
               <div class="card-body bg-body-tertiary">
                 <h4 class="card-title text-center mb-4">Crema al cacao y leche con avellanas</h4>
-                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center">Más información</a>
+                <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center" aria-label="Más información sobre Crema al cacao y leche con avellanas">Más información</a>
               </div>
             </div>
           </div>
@@ -216,7 +216,7 @@
   <footer class="container-fluid text-muted py-5">
     <div class="container">
       <p class="float-end mb-1">
-        <a href="#">Volver arriba</a>
+        <a href="#" aria-label="Volver al inicio de la página">Volver arriba</a>
       </p>
       <p class="mb-1">Este portafolio es &copy; 2024 David Romero Mateu de DAW. ¡Mira los proyectos!</p>
       <p class="mb-0">¿Quieres contratar mis servicios? <a href="/formulario-pago.html">Contrátanos</a> o <a href="#">contacta con nosotros</a>.</p>
